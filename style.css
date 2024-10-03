@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 2s;
+  transform: translate(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2s;
+  transform: translateX(0);
+}
+.container {
+  background-color: var(--nav-color);
+  font-size: 1.2rem;
+  font-family: "Merriweather Sans", sans-serif;
+  height: 70px;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.container .navbar {
+  justify-content: space-between;
+}
+
+.navbar h2 {
+  color: white;
+}
+
+.navbar li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li a:hover {
+  color: bisque;
+  border-bottom: 1px solid bisque;
+  transition: 1s;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: bisque;
+  border-bottom: 1px solid bisque;
+  transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: bisque;
+}
+
+.video-main {
+  width: 100%; /* Ocupa a largura total do contêiner */
+  height: auto; /* Ajusta a altura para manter a proporção */
+  object-fit: cover; /* Garante que o vídeo preencha o contêiner mantendo a proporção */
+  margin: 0;
+}
+
+.container-qm {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(0, 0%, 95%);
+
+  min-height: 800px;
+}
+
+.texto-qm {
+  max-width: 400px;
+}
+
+.texto-qm h1 {
+  text-align: center;
+}
+.texto-qm p a {
+  color: black;         
+  text-decoration: none; 
+  font-weight: bold;     
+}
+
+.texto-qm p a:hover {
+  color: blue;         
+  text-decoration: none; 
+  font-weight: bold;     
+}
+
+.img-qm {
+  background-image: url('img/process.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+  width: 550px;
+  border-radius: 15px;
+}
+.container-card {
+  min-height: 600px;
+  background-color: hsl(222, 63%, 6%);
+  
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.background {
+  background-color: hsl(222, 63%, 6%);
+  color: white;
+  
+  
+}
+.background h1 {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(222, 63%, 6%);
+  height: 100px;
+  align-items: end;
+  font-family: 'Montserrat', sans-serif;
+
+  
+}
+
+
+.bloco-1 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  height:  245px;
+}
+.bloco-1 img {
+  width: auto;               
+  height: 150px;             
+  border-radius: 20px;
+  object-fit: cover;        
+  object-position: top;      
+  min-width: 150px;
+}
+.text-card {
+  margin-top: 7px;
+  color: rgb(143, 142, 142);
+
+}
+
+.social-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaço entre os botões */
+}
+
+.btn-social {
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 5px; /* Espaço para a borda */
+  transition: color 0.3s ease;
+}
+
+.btn-social:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor; /* Usa a cor do ícone para a borda */
+  transition: width 0.3s ease;
+}
+
+.btn-social:hover:before {
+  width: 100%; /* Aumenta a borda até o tamanho completo no hover */
+}
+
+.btn-social:hover {
+  color: #0077B5; /* Mudança de cor do ícone no hover */
+}
+
+/* Cores específicas para cada rede */
+.instagram {
+  color: #E4405F;
+}
+
+.linkedin {
+  color: #0077B5;
+}
+
+.idea-1 {
+  min-height: 900px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.idea-2 {
+  min-height: 900px;
+  color: black;
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+
+}
+
+.titulo-i1 {
+  height: 300px;
+  width: 600px;
+  
+}
+
+.titulo-i1 h1 {
+  font-size: 45px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo-i1 p {
+  color: white;
+  margin-top: 60px;
+  font-size: 25px;
+}
+
+.titulo-i2 {
+  height: 300px;
+  width: 600px;
+  text-align: center;
+}
+
+.titulo-i2 h1 {
+  font-size: 45px;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo-i2 p {
+  color: black;
+  margin-top: 40px;
+  font-size: 16px;
+}
+.titulo-i2 p a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+.bloco-1:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.bloco-1:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.bloco-1:nth-child(4) {
+  transition-delay: 800ms;
+}
+
+.bloco-1:nth-child(5) {
+  transition-delay: 1000ms;
+}
+
+.img-titu1 {
+  height: 200px;
+  width: 600px;
+  object-fit: cover;
+  
+}
+
+.index-section {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  min-height: 950px;
+}
+.titulo-index {
+  font-size: 70px;
+  max-width: 300px;
+  color: #0077B5;
+  
+}
+.p-index {
+  max-width: 700px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.footer {
+  background-color: #000000;
+  color: #ecf0f1;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  color: #ecf0f1;
+}
+
+.footer-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+}
+
+.footer-socials a {
+  color: #ecf0f1;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #7f8c8d;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+/* Estilos de ícones de redes sociais (fa-facebook, fa-twitter, etc.) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.p-index a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+} 
+.p-index a:hover {
+  
+  color: #0077B5;
+}
